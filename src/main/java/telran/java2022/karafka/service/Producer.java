@@ -18,6 +18,5 @@ public class Producer {
 
 	public void sendMessage(SampleMessage message) {
 		kafkaTemplate.send(topic, message.getMessage());
-		System.out.println("Sent sample message [" + message + "] to " + topic);
 	}
 }
